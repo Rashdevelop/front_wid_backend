@@ -1,8 +1,8 @@
-const express=require("express");
-require("dotenv").config();
+import express from "express";
+import dotenv from "dotenv"
 const app=express();
 
-
+dotenv.config();
 app.get("/mohit",(req,res)=>{
     res.send("this is mohit gupta server");
 })
